@@ -1,0 +1,72 @@
+{
+  "title": "meta schema of jsdoc",
+  "type": "object",
+  "optional": true,
+  "additionalProperties": false,
+  "properties": {
+    "code": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "funcscope": {
+          "type": "string",
+          "optional": true
+        },
+        "id": {
+          "type": "string",
+          "optional": true
+        },
+        "name": {
+          "optional": true
+        },
+        "node": {
+          "type": "object",
+          "optional": true
+        },
+        "paramnames": {
+          "type": "array",
+          "optional": true,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "type": {
+          "type": "string",
+          "optional": true
+        },
+        "value": {
+          "optional": true
+        }
+      }
+    },
+    "filename": {
+      "title": "The name of the file that contains the code associated with this doclet.",
+      "type": "string",
+      "optional": true
+    },
+    "lineno": {
+      "title": "The line number of the code associated with this doclet.",
+      "type": "number",
+      "optional": true
+    },
+    "path": {
+      "title": "The path in which the code associated with this doclet is located.",
+      "type": "string",
+      "optional": true
+    },
+    "range": {
+      "title": "The positions of the first and last characters of the code associated with this doclet.",
+      "type": "array",
+      "optional": true,
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "number"
+      }
+    },
+    "vars": {
+      "type": "object"
+    }
+  }
+}

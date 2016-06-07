@@ -1,0 +1,62 @@
+{
+  "title": "param schema of jsdoc",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "defaultvalue": {
+      "optional": true
+    },
+    "description": {
+      "type": [
+        "string",
+        "null",
+        "undefined"
+      ],
+      "optional": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "nullable": {
+      "type": [
+        "boolean",
+        "null",
+        "undefined"
+      ],
+      "optional": true
+    },
+    "optional": {
+      "type": [
+        "boolean",
+        "null",
+        "undefined"
+      ],
+      "optional": true
+    },
+    "type": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "names": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "parsedType": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      }
+    },
+    "variable": {
+      "type": [
+        "boolean",
+        "null",
+        "undefined"
+      ],
+      "optional": true
+    }
+  }
+}

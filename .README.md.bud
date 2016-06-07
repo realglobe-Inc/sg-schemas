@@ -1,0 +1,40 @@
+/**
+ * Bud file for README.md
+ */
+
+'use strict'
+
+const apeTmpl = require('ape-tmpl')
+const pkg = require('./package.json')
+const expandglob = require('expandglob')
+const path = require('path')
+const stringcase = require('stringcase')
+
+module.exports = apeTmpl.readmeMdBud({
+  pkg: pkg,
+  repo: pkg.repository,
+  sections: 'doc/guides/*.md.hbs',
+  badges: {
+    travisCom: true,
+    travisComToken: 'aeFzCpBZebyaRijpCFmm',
+    codeclimate: false,
+    codeclimateCoverage: false,
+    npm: true,
+    standard: true
+  },
+  overview: 'doc/overview.md',
+  links: require('./doc/links'),
+  vars: {
+    get schemas () {
+      return expandglob.sync('lib/**/*.json')
+        .map((filename) => ({
+          filename,
+          name: filename.replace(/\.json$/, '')
+        }))
+    }
+  }
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

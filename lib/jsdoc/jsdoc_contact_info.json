@@ -1,0 +1,20 @@
+{
+  "title": "contact info schema of jsdoc",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "email": {
+      "type": "string",
+      "optional": true
+    },
+    "name": {
+      "type": "string",
+      "optional": true
+    },
+    "url": {
+      "type": "string",
+      "optional": true,
+      "format": "uri"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "type property schema of jsdoc",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "names": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "parsedType": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}
