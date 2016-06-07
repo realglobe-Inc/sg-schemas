@@ -1,4 +1,6 @@
 {
+  "id": "http://realglobe.jp/sugos/schemas/jsdoc/jsdoc-meta-schema#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "meta schema of jsdoc",
   "type": "object",
   "optional": true,

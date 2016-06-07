@@ -1,4 +1,6 @@
 {
+  "id": "http://realglobe.jp/sugos/schemas/jsdoc/jsdoc-contact-info-schema#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "contact info schema of jsdoc",
   "type": "object",
   "additionalProperties": false,

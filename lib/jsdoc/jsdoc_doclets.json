@@ -1,4 +1,6 @@
 {
+  "id": "http://realglobe.jp/sugos/schemas/jsdoc/jsdoc-doclets-schema#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "doclets schema of jsdoc",
   "type": "array",
   "items": {

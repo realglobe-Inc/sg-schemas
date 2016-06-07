@@ -1,4 +1,6 @@
 {
+  "id": "http://realglobe.jp/sugos/schemas/jsdoc/jsdoc-type-property-schema#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "type property schema of jsdoc",
   "type": "object",
   "additionalProperties": false,
