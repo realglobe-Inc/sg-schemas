@@ -21,7 +21,7 @@
       "description": "Key of spot"
     }
   },
-  "additionalProperties": false,
+  "additionalProperties": true,
   "required": [
     "interface",
     "method"

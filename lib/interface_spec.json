@@ -22,7 +22,7 @@
       "description": "Method implementations"
     }
   },
-  "additionalProperties": false,
+  "additionalProperties": true,
   "required": [
     "name",
     "version"
