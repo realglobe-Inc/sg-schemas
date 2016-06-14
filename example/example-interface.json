@@ -1,0 +1,21 @@
+{
+  "name": "example-ar-drone-interface",
+  "version": "1.0.0",
+  "desc": "Example of SUGOS-Spot interface of",
+  "methods": {
+    "takeOff": {
+      "desc": "Take off from the land.",
+      "params": [
+        {
+          "name": "attitude",
+          "type": "string",
+          "desc": "Attitude to stop"
+        }
+      ]
+    },
+    "goHome": {
+      "desc": "Go to home position and land on.",
+      "params": []
+    }
+  }
+}

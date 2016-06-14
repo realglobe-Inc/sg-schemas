@@ -1,0 +1,85 @@
+{
+  "id": "http://sugos.tech/schemas/interface",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Interface of SUGOS-Spot",
+  "type": "object",
+  "properties": {
+    "name": {
+      "$ref": "#/definitions/name",
+      "minLength": 1,
+      "description": "Name of interface"
+    },
+    "version": {
+      "$ref": "#/definitions/semver",
+      "description": "Version number with semver format"
+    },
+    "desc": {
+      "$ref": "#/definitions/text",
+      "description": "Description text"
+    },
+    "methods": {
+      "type": "object",
+      "description": "Method implementations"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "version"
+  ],
+  "definitions": {
+    "name": {
+      "type": "string",
+      "pattern": "^[A-Za-z](?:[_\\.-]?[A-Za-z0-9]+)*$"
+    },
+    "semver": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+(?:-[a-z]+(?:[_\\.-]*[a-z0-9]+)*)*$"
+    },
+    "text": {
+      "type": "string",
+      "maxLength": "1024"
+    },
+    "functions": {
+      "type": "object",
+      "patternProperties": {
+        ".*": {
+          "$ref": "#/definitions/function"
+        }
+      }
+    },
+    "function": {
+      "type": "object",
+      "properties": {
+        "desc": {
+          "$ref": "#/definitions/text",
+          "description": "Description of the function"
+        },
+        "params": {
+          "type": "array",
+          "description": "Parameters of the function",
+          "items": {
+            "$ref": "#/definitions/functionParam"
+          }
+        }
+      }
+    },
+    "functionParam": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "$ref": "#/definitions/name",
+          "description": "Name of the parameter"
+        },
+        "type": {
+          "$ref": "#/definitions/type",
+          "description": "Type of the parameter"
+        },
+        "desc": {
+          "$ref": "#/definitions/text",
+          "description": "Description of parameter"
+        }
+      }
+    }
+  }
+}

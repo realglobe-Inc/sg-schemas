@@ -29,7 +29,16 @@ module.exports = apeTmpl.readmeMdBud({
       return expandglob.sync('lib/**/*.json')
         .map((filename) => ({
           filename,
-          name: filename.replace(/\.json$/, '')
+          name: path.relative('lib', filename),
+          schema: require(path.resolve(filename))
+        }))
+    },
+    get examples () {
+      return expandglob.sync('example/**/example-*.json')
+        .map((filename) => ({
+          filename,
+          name: path.basename(filename, '.json'),
+          example: path.resolve(filename)
         }))
     }
   }

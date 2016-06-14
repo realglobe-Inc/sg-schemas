@@ -34,10 +34,14 @@
     "expandglob": "^3.0.2",
     "injectmock": "^2.0.0",
     "jsdoc": "^3.4.0",
-    "stringcase": "^2.0.1"
+    "stringcase": "^2.0.1",
+    "tv4": "^1.2.7"
   },
   "engines": {
     "node": ">=6",
     "npm": ">=3"
+  },
+  "publishConfig": {
+    "registry": "https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-local"
   }
 }

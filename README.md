@@ -69,18 +69,45 @@ $ npm install sg-schemas --save
 Schemas
 ---------
 
-+ [lib/jsdoc/jsdoc_bugs](lib/jsdoc/jsdoc_bugs.json)
-+ [lib/jsdoc/jsdoc_contact_info](lib/jsdoc/jsdoc_contact_info.json)
-+ [lib/jsdoc/jsdoc_doclet](lib/jsdoc/jsdoc_doclet.json)
-+ [lib/jsdoc/jsdoc_doclets](lib/jsdoc/jsdoc_doclets.json)
-+ [lib/jsdoc/jsdoc_enum_property](lib/jsdoc/jsdoc_enum_property.json)
-+ [lib/jsdoc/jsdoc_meta](lib/jsdoc/jsdoc_meta.json)
-+ [lib/jsdoc/jsdoc_package](lib/jsdoc/jsdoc_package.json)
-+ [lib/jsdoc/jsdoc_param](lib/jsdoc/jsdoc_param.json)
-+ [lib/jsdoc/jsdoc_type_property](lib/jsdoc/jsdoc_type_property.json)
++ [interface.json - Interface of SUGOS-Spot](lib/interface.json)
 
 
 <!-- Section from "doc/guides/02.Schemas.md.hbs" End -->
+
+<!-- Section from "doc/guides/03.Examples.md.hbs" Start -->
+
+<a name="section-doc-guides-03-examples-md"></a>
+Examples
+---------
+
+##### Example Interface
+
+```json
+{
+  "name": "example-ar-drone-interface",
+  "version": "1.0.0",
+  "desc": "Example of SUGOS-Spot interface of",
+  "methods": {
+    "takeOff": {
+      "desc": "Take off from the land.",
+      "params": [
+        {
+          "name": "attitude",
+          "type": "string",
+          "desc": "Attitude to stop"
+        }
+      ]
+    },
+    "goHome": {
+      "desc": "Go to home position and land on.",
+      "params": []
+    }
+  }
+}
+```
+
+
+<!-- Section from "doc/guides/03.Examples.md.hbs" End -->
 
 
 <!-- Sections Start -->
