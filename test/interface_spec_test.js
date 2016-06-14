@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const interfaceSchema = require('../lib/interface.json')
+const interfaceSpec = require('../lib/interface_spec.json')
 const assert = require('assert')
 const tv4 = require('tv4')
 const co = require('co')
@@ -20,8 +20,8 @@ describe('interface', () => {
 
   it('Validate example', () => co(function * () {
     let result = tv4.validateResult(
-      require('../example/example-interface.json'),
-      interfaceSchema
+      require('../example/example-interface-spec.json'),
+      interfaceSpec
     )
     assert.ok(result.valid)
   }))
@@ -31,7 +31,7 @@ describe('interface', () => {
       {
         version: "1.0.0"
       },
-      interfaceSchema
+      interfaceSpec
     )
     assert.ok(!result.valid)
   }))

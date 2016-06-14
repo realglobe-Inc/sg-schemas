@@ -1,0 +1,15 @@
+{
+  "interface": "bash",
+  "method": "spawn",
+  "params": [
+    "ls",
+    [
+      "-la"
+    ],
+    {
+      "env": {
+        "HOME": "/home/hoge"
+      }
+    }
+  ]
+}

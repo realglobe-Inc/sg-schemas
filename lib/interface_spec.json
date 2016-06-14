@@ -1,7 +1,7 @@
 {
-  "id": "http://sugos.tech/schemas/interface",
+  "id": "http://sugos.tech/schemas/interface-spec",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Interface of SUGOS-Spot",
+  "title": "Spec of SUGOS-Spot Interface",
   "type": "object",
   "properties": {
     "name": {

@@ -69,7 +69,8 @@ $ npm install sg-schemas --save
 Schemas
 ---------
 
-+ [interface.json - Interface of SUGOS-Spot](lib/interface.json)
++ [interface_spec.json - Spec of SUGOS-Spot Interface](lib/interface_spec.json)
++ [perform_config.json - Configuration of SUGOS action performing](lib/perform_config.json)
 
 
 <!-- Section from "doc/guides/02.Schemas.md.hbs" End -->
@@ -80,7 +81,7 @@ Schemas
 Examples
 ---------
 
-##### Example Interface
+##### Example Interface Spec
 
 ```json
 {
@@ -103,6 +104,25 @@ Examples
       "params": []
     }
   }
+}
+```
+##### Example Perform Config
+
+```json
+{
+  "interface": "bash",
+  "method": "spawn",
+  "params": [
+    "ls",
+    [
+      "-la"
+    ],
+    {
+      "env": {
+        "HOME": "/home/hoge"
+      }
+    }
+  ]
 }
 ```
 

@@ -15,6 +15,7 @@ module.exports = apeTmpl.readmeMdBud({
   repo: pkg.repository,
   sections: 'doc/guides/*.md.hbs',
   badges: {
+    travis: false,
     travisCom: true,
     travisComToken: 'aeFzCpBZebyaRijpCFmm',
     codeclimate: false,

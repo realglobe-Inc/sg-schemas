@@ -1,0 +1,32 @@
+{
+  "id": "http://sugos.tech/schemas/perform-config",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Configuration of SUGOS action performing",
+  "type": "object",
+  "properties": {
+    "interface": {
+      "$ref": "#/definitions/name",
+      "description": "Name of interface to work with"
+    },
+    "method": {
+      "$ref": "#/definitions/name",
+      "description": "Name of method to perform"
+    },
+    "params": {
+      "params": {
+        "type": "array",
+        "description": "Parameters of the function"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "name"
+  ],
+  "definitions": {
+    "name": {
+      "type": "string",
+      "pattern": "^[A-Za-z](?:[_\\.-]?[A-Za-z0-9]+)*$"
+    }
+  }
+}
