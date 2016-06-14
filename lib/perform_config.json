@@ -13,10 +13,12 @@
       "description": "Name of method to perform"
     },
     "params": {
-      "params": {
-        "type": "array",
-        "description": "Parameters of the function"
-      }
+      "type": "array",
+      "description": "Parameters of the function"
+    },
+    "key": {
+      "type": "string",
+      "description": "Key of spot"
     }
   },
   "additionalProperties": false,
