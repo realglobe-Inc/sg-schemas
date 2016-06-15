@@ -51,6 +51,10 @@
     "function": {
       "type": "object",
       "properties": {
+        "name": {
+          "$ref": "#/definitions/name",
+          "description": "Name of method"
+        },
         "desc": {
           "$ref": "#/definitions/text",
           "description": "Description of the function"
@@ -61,6 +65,10 @@
           "items": {
             "$ref": "#/definitions/functionParam"
           }
+        },
+        "return": {
+          "$ref": "#/definitions/functionReturn",
+          "description": "Value to return"
         }
       }
     },
@@ -71,6 +79,19 @@
           "$ref": "#/definitions/name",
           "description": "Name of the parameter"
         },
+        "type": {
+          "$ref": "#/definitions/type",
+          "description": "Type of the parameter"
+        },
+        "desc": {
+          "$ref": "#/definitions/text",
+          "description": "Description of parameter"
+        }
+      }
+    },
+    "functionReturn": {
+      "type": "object",
+      "properties": {
         "type": {
           "$ref": "#/definitions/type",
           "description": "Type of the parameter"

@@ -85,7 +85,7 @@ Examples
 
 ```json
 {
-  "name": "example-ar-drone-interface",
+  "name": "example-my-drone-interface",
   "version": "1.0.0",
   "desc": "Example of SUGOS-Spot interface of",
   "methods": {
@@ -101,7 +101,11 @@ Examples
     },
     "goHome": {
       "desc": "Go to home position and land on.",
-      "params": []
+      "params": [],
+      "return": {
+        "type": "boolean",
+        "desc": "Succeed or not"
+      }
     }
   }
 }
