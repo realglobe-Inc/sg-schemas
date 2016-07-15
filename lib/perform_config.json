@@ -4,9 +4,9 @@
   "title": "Configuration of SUGOS action performing",
   "type": "object",
   "properties": {
-    "interface": {
+    "modules": {
       "$ref": "#/definitions/name",
-      "description": "Name of interface to work with"
+      "description": "Name of modules to work with"
     },
     "method": {
       "$ref": "#/definitions/name",
@@ -23,7 +23,7 @@
   },
   "additionalProperties": true,
   "required": [
-    "interface",
+    "modules",
     "method"
   ],
   "definitions": {
