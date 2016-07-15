@@ -18,7 +18,7 @@
     },
     "key": {
       "type": "string",
-      "description": "Key of spot"
+      "description": "Key of actor"
     }
   },
   "additionalProperties": true,
