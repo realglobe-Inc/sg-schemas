@@ -69,7 +69,7 @@ $ npm install sg-schemas --save
 Schemas
 ---------
 
-+ [interface_spec.json - Spec of SUGOS-Spot Interface](lib/interface_spec.json)
++ [module_spec.json - Spec of SUGOS-Spot Interface](lib/module_spec.json)
 + [perform_config.json - Configuration of SUGOS action performing](lib/perform_config.json)
 
 
@@ -81,13 +81,13 @@ Schemas
 Examples
 ---------
 
-##### Example Interface Spec
+##### Example Module Spec
 
 ```json
 {
-  "name": "example-my-drone-interface",
+  "name": "example-my-drone-module",
   "version": "1.0.0",
-  "desc": "Example of SUGOS-Spot interface of",
+  "desc": "Example of module for SUGO-Actor",
   "methods": {
     "takeOff": {
       "desc": "Take off from the land.",
@@ -153,5 +153,8 @@ This software is released under the [MIT License](https://github.com/realglobe-I
 Links
 ------
 
++ [sugos][sugos_url]
+
+[sugos_url]: https://github.com/realglobe-Inc/sugos
 
 <!-- Links End -->

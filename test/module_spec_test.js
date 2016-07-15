@@ -1,15 +1,15 @@
 /**
- * Test case for interface.
+ * Test case for module.
  * Runs with mocha.
  */
 'use strict'
 
-const interfaceSpec = require('../lib/interface_spec.json')
+const moduleSpec = require('../lib/module_spec.json')
 const assert = require('assert')
 const tv4 = require('tv4')
 const co = require('co')
 
-describe('interface', () => {
+describe('module', () => {
   before(() => co(function * () {
 
   }))
@@ -20,8 +20,8 @@ describe('interface', () => {
 
   it('Validate example', () => co(function * () {
     let result = tv4.validateResult(
-      require('../example/example-interface-spec.json'),
-      interfaceSpec
+      require('../example/example-module-spec.json'),
+      moduleSpec
     )
     assert.ok(result.valid)
   }))
@@ -31,7 +31,7 @@ describe('interface', () => {
       {
         version: "1.0.0"
       },
-      interfaceSpec
+      moduleSpec
     )
     assert.ok(!result.valid)
   }))

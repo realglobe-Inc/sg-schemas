@@ -1,5 +1,5 @@
 {
-  "id": "http://sugos.tech/schemas/interface-spec",
+  "id": "http://sugos.tech/schemas/module-spec",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Spec of SUGOS-Spot Interface",
   "type": "object",
@@ -7,7 +7,7 @@
     "name": {
       "$ref": "#/definitions/name",
       "minLength": 1,
-      "description": "Name of interface"
+      "description": "Name of module"
     },
     "version": {
       "$ref": "#/definitions/semver",

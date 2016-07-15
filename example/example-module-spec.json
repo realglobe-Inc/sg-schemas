@@ -1,7 +1,7 @@
 {
-  "name": "example-my-drone-interface",
+  "name": "example-my-drone-module",
   "version": "1.0.0",
-  "desc": "Example of SUGOS-Spot interface of",
+  "desc": "Example of module for SUGO-Actor",
   "methods": {
     "takeOff": {
       "desc": "Take off from the land.",

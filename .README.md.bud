@@ -6,7 +6,7 @@
 
 const apeTmpl = require('ape-tmpl')
 const pkg = require('./package.json')
-const expandglob = require('expandglob')
+const aglob = require('aglob')
 const path = require('path')
 const stringcase = require('stringcase')
 
@@ -27,7 +27,7 @@ module.exports = apeTmpl.readmeMdBud({
   links: require('./doc/links'),
   vars: {
     get schemas () {
-      return expandglob.sync('lib/**/*.json')
+      return aglob.sync('lib/**/*.json')
         .map((filename) => ({
           filename,
           name: path.relative('lib', filename),
@@ -35,7 +35,7 @@ module.exports = apeTmpl.readmeMdBud({
         }))
     },
     get examples () {
-      return expandglob.sync('example/**/example-*.json')
+      return aglob.sync('example/**/example-*.json')
         .map((filename) => ({
           filename,
           name: path.basename(filename, '.json'),
