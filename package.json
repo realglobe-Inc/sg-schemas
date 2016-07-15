@@ -3,8 +3,10 @@
   "version": "2.0.1",
   "description": "Scheams for SUGOS",
   "main": "lib",
+  "browser": "sims/browser"
   "scripts": {
-    "test": "./ci/test.js"
+    "test": "./ci/test.js",
+    "prepublish": "./ci/build.js && ./ci/browser.js"
   },
   "repository": "realglobe-Inc/sg-schemas",
   "keywords": [
@@ -25,6 +27,7 @@
   },
   "devDependencies": {
     "aglob": "^1.0.1",
+    "ape-compiling": "^5.0.0",
     "ape-covering": "^3.0.3",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.1",
