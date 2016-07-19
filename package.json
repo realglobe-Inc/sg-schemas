@@ -23,11 +23,13 @@
   },
   "homepage": "https://github.com/realglobe-Inc/sg-schemas#readme",
   "dependencies": {
-    "co": "^4.6.0"
+    "co": "^4.6.0",
+    "filecopy": "^2.0.1"
   },
   "devDependencies": {
+    "ababel": "^1.0.17",
+    "ababel-es2015": "^1.0.1",
     "aglob": "^1.0.1",
-    "ape-compiling": "^5.0.0",
     "ape-covering": "^3.0.3",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.1",
