@@ -2,9 +2,9 @@ language: node_js
 node_js:
 - '6'
 before_install:
-- echo "registry = https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-virtual" > .npmrc
-- curl -u${NPM_USER}:${NPM_PASSWORD} "https://realglobe.artifactoryonline.com/realglobe/api/npm/auth" >> .npmrc
-- cat .npmrc
+- echo "registry = https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-virtual" > $HOME/.npmrc
+- curl -u${NPM_USER}:${NPM_PASSWORD} "https://realglobe.artifactoryonline.com/realglobe/api/npm/auth" >> $HOME/.npmrc
+- cat $HOME/.npmrc
 - npm install istanbul mocha -g
 install:
 - npm install
@@ -13,3 +13,8 @@ script:
 - ./ci/test.js
 - ./ci/cover.js
 - ./ci/report.js
+after_success:
+- ./ci/travis/publish.js
+- ./ci/travis/push_sugos_index.js
+env:
+  secure: "vzTClDTQ/ou4Dm7p6sjx4Wv6qkWjpBfmnEKzcs34ihJRg97caCdPZ0JIgc0NSx5/449fSODp2Uj72YeC2hi3pnUGdSJkmz8nJuuw9/DKUT76+MJq25/vaV8kgTX+f9UbucMagjBTbF88QPR0Wha3thvdZCjA09Sls8hwIpURd6i7njPpYQfFRslD8Jphm/+ivgaYgTO+i9KVWCArdqdSddR7/Qkw6vROLqiKS6PSININQHllvZRrlKJyQCTuw1NStE5M4Foi+IXN3eruOvgYNLr/o1R6z+/FlaRb431/oemwAZzGRYQMJUKUbxZscWq55RaxNrNg0N8JK5zwU22U+FY8m1NjHloWAuWEnv5KwxxjxGsQRwDapHy6tkl6PDCW7MRv76mu2ADitl+LGODj+pCPG/i0lNPb/kMosNohwKu0Ypf1mp+MAecHobYJgT6GS+OWRNu/ucMkg38qWYsCtNo6NOVlXFuv3E2eiHrR5m6HtCk1OGuFhT/TmRHH1NQDybZmapIJUCBadhFcZQInrnPSo69L/ltAM4FPjGyFVr85YQMWaWmbt11J3N6hTbSyb7ORaH7qzeP2R7hRqqL1NwjOCtfFrNKBjwsfXtAnH3QHO5FRmImGR7cGNs4l/b6fG0Q+y6ZHHhyqBKyQiErHElt1BuK3AqqtYWGWUg8jA2U="

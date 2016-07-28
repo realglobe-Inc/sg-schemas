@@ -40,6 +40,7 @@
     "ape-updating": "^4.0.4",
     "coz": "^6.0.5",
     "injectmock": "^2.0.0",
+    "sg-travis": "^1.1.25",
     "stringcase": "^3.0.1",
     "tv4": "^1.2.7"
   },
