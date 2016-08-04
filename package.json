@@ -6,6 +6,7 @@
   "browser": "sims/browser",
   "scripts": {
     "test": "./ci/test.js",
+    "test-karma": "karma start",
     "prepublish": "./ci/build.js && ./ci/browser.js"
   },
   "repository": "realglobe-Inc/sg-schemas",
@@ -38,11 +39,22 @@
     "ape-testing": "^4.0.1",
     "ape-tmpl": "^5.0.12",
     "ape-updating": "^4.0.4",
+    "babel-loader": "^6.2.4",
+    "babel-polyfill": "^6.9.1",
     "coz": "^6.0.5",
     "injectmock": "^2.0.0",
+    "json-loader": "^0.5.4",
+    "karma": "^1.1.2",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-mocha": "^1.1.1",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^3.0.0",
     "sg-travis": "^1.1.25",
     "stringcase": "^3.0.1",
-    "tv4": "^1.2.7"
+    "tv4": "^1.2.7",
+    "webpack": "^1.13.1"
   },
   "engines": {
     "node": ">=6",
