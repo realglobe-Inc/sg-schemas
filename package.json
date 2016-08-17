@@ -6,6 +6,7 @@
   "browser": "shim/browser",
   "scripts": {
     "test": "./ci/test.js",
+    "test-karma": "karma start",
     "prepublish": "./ci/build.js && ./ci/browser.js"
   },
   "repository": "realglobe-Inc/sg-schemas",
@@ -40,6 +41,8 @@
     "ape-updating": "^4.0.5",
     "coz": "^6.0.17",
     "injectmock": "^2.0.0",
+    "sg-karma": "^1.0.1",
+    "sg-travis": "^1.1.25",
     "stringcase": "^3.0.1",
     "tv4": "^1.2.7"
   },
