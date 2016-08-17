@@ -1,8 +1,8 @@
 module.exports = function (config) {
   config.set({
-    browsers: process.env.CI ? ['Firefox'] : ['Chrome', 'Firefox'],
+    browsers: process.env.CI ? [ 'Firefox' ] : [ 'Chrome', 'Firefox' ],
 
-    frameworks: ['mocha'],
+    frameworks: [ 'mocha' ],
 
     singleRun: true,
 
@@ -14,7 +14,7 @@ module.exports = function (config) {
       'test/test_index.karma.js': [ 'webpack', 'sourcemap' ]
     },
 
-    reporters: ['dots'],
+    reporters: [ 'dots' ],
 
     webpack: {
       devtool: 'inline-source-map',
@@ -25,6 +25,7 @@ module.exports = function (config) {
             loader: 'babel-loader',
             include: __dirname + '/test',
             query: {
+              babelrc: false,
               presets: [ 'es2015' ]
             }
           },
@@ -35,7 +36,7 @@ module.exports = function (config) {
         ]
       },
       resolve: {
-        extensions: ['', '.js', '.json']
+        extensions: [ '', '.js', '.json' ]
       }
     },
 

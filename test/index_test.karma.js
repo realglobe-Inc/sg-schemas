@@ -3,7 +3,7 @@
  */
 'use strict'
 
-const sgSchemas = require('../sims/browser')
+const sgSchemas = require('../shim/browser')
 const assert = require('assert')
 
 describe('index', function () {

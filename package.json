@@ -39,6 +39,7 @@
     "ape-testing": "^4.0.2",
     "ape-tmpl": "^5.0.15",
     "ape-updating": "^4.0.5",
+    "babel-polyfill": "^6.13.0",
     "coz": "^6.0.17",
     "injectmock": "^2.0.0",
     "sg-karma": "^1.0.1",

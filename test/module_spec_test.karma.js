@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const moduleSpec = require('../sims/browser/module_spec.json')
+const moduleSpec = require('../shim/browser/module_spec.json')
 const assert = require('assert')
 const tv4 = require('tv4')
 const co = require('co')

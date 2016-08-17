@@ -4,7 +4,7 @@
  */
 'use strict'
 
-const performConfig = require('../sims/browser/perform_config.json')
+const performConfig = require('../shim/browser/perform_config.json')
 const assert = require('assert')
 const tv4 = require('tv4')
 const co = require('co')
