@@ -53,6 +53,7 @@ Scheams for SUGOS
 <!-- Section from "doc/guides/01.Installation.md.hbs" Start -->
 
 <a name="section-doc-guides-01-installation-md"></a>
+
 Installation
 -----
 
@@ -66,6 +67,7 @@ $ npm install sg-schemas --save
 <!-- Section from "doc/guides/02.Schemas.md.hbs" Start -->
 
 <a name="section-doc-guides-02-schemas-md"></a>
+
 Schemas
 ---------
 
@@ -78,6 +80,7 @@ Schemas
 <!-- Section from "doc/guides/03.Examples.md.hbs" Start -->
 
 <a name="section-doc-guides-03-examples-md"></a>
+
 Examples
 ---------
 

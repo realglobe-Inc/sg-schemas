@@ -15,9 +15,9 @@ const filecopy = require('filecopy')
 apeTasking.runTasks('browser', [
   () => ababelES2015('**/*.js', {
     cwd: 'lib',
-    out: 'sims/browser'
+    out: 'shim/browser'
   }),
-  () => filecopy('lib/*.json', 'sims/browser', {
+  () => filecopy('lib/*.json', 'shim/browser', {
     force: true,
     mkdirp: true
   })

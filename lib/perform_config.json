@@ -19,6 +19,10 @@
     "key": {
       "type": "string",
       "description": "Key of actor"
+    },
+    "meta": {
+      "type": "object",
+      "description": "Meta data of this"
     }
   },
   "additionalProperties": true,

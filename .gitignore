@@ -31,16 +31,8 @@ node_modules
 tmp
 
 !lib/index.js
-public/css/*.css
-public/css/*.css.map
-public/html/*.html
-public/js/*.js
-lib/browser/*.js
-lib/components/*.js
-lib/components/fragments/**/*.js
-lib/html/*.js
 
 .npmrc
 .DS_Store
 
-sims/browser
+shim/browser
