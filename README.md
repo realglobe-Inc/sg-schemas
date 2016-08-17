@@ -71,7 +71,7 @@ $ npm install sg-schemas --save
 Schemas
 ---------
 
-+ [module_spec.json - Spec of SUGOS-Spot Interface](lib/module_spec.json)
++ [module_spec.json - Spec of SUGOS-Actor module](lib/module_spec.json)
 + [perform_config.json - Configuration of SUGOS action performing](lib/perform_config.json)
 
 
