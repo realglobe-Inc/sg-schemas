@@ -1,7 +1,7 @@
 {
   "id": "http://sugos.tech/schemas/module-spec",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Spec of SUGOS-Spot Interface",
+  "title": "Spec of SUGOS-Actor module",
   "type": "object",
   "properties": {
     "name": {
