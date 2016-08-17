@@ -1,6 +1,6 @@
 {
   "name": "sg-schemas",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Scheams for SUGOS",
   "main": "lib",
   "browser": "shim/browser",
