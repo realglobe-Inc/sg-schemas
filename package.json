@@ -27,10 +27,10 @@
     "co": "^4.6.0"
   },
   "devDependencies": {
-    "ababel": "^1.1.2",
-    "ababel-es2015": "^1.0.6",
-    "aglob": "^1.0.2",
-    "amocha": "^1.0.16",
+    "ababel": "^2.0.1",
+    "ababel-es2015": "^2.0.1",
+    "aglob": "^2.0.1",
+    "amocha": "^2.0.0",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
     "ape-tasking": "^4.0.8",
