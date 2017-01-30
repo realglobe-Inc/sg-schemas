@@ -41,8 +41,8 @@
     "filecopy": "^2.0.2",
     "injectmock": "^2.0.0",
     "sg-karma": "^1.0.1",
-    "sg-travis": "^1.1.25",
     "stringcase": "^3.0.1",
+    "sugos-travis": "^2.0.5",
     "tv4": "^1.2.7"
   },
   "engines": {
