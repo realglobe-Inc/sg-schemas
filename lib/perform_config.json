@@ -23,6 +23,10 @@
     "meta": {
       "type": "object",
       "description": "Meta data of this"
+    },
+    "pid": {
+      "type": "string",
+      "description": "Id of performing"
     }
   },
   "additionalProperties": true,
